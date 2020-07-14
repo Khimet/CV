@@ -1,0 +1,45 @@
+#wrapper {
+
+    display: block;
+    margin-top: 2rem;
+
+
+}
+
+.content .photo_profil #photo {
+    /*display: none;*/
+    max-width: 25rem;
+    max-height: 25rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.637);
+}
+
+.content #hero {
+    background-color: greenyellow;
+}
+
+
+
+.reseaux_sociaux #icon {
+
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1rem;
+
+}
+
+.reseaux_sociaux #icon:hover {
+
+    background-color: rgb(0, 153, 255);
+
+}
+
+
+
