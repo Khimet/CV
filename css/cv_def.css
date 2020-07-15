@@ -55,18 +55,24 @@
 
 #logo {
 
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
 }
 
 .card-body #irba_logo {
     display: none;
 }
 
-.certifications .section_title {
+/*.certifications .section_title {
 
     border: 0.2rem solid rgba(0, 0, 0, 0.637);
 
+}*/
+
+* .section_title {
+    border: 0.2rem solid rgba(0, 0, 0, 0.637);
+    padding: 5px;
+    vertical-align: middle;
 }
 
 .descriptions .description h5{
@@ -75,11 +81,46 @@
     
 }
 
+.descriptions .description {
+
+    display: inline-block;
+    margin-left: 5rem;
+}
+
 .card:hover{
     border-color: rgb(0, 102, 255);
     box-shadow: 10px 10px 8px rgb(0, 102, 255);
 }
 
+:root {
+    --star-size: 20px;
+    --star-color: rgb(185, 185, 185);
+    --star-background: #fc0;
+}
+  
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: .5;
+    /*text-shadow: 0px 0px 0*/
+}
+    
+.Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+
+
+
+  
 
 
 
